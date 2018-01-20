@@ -57,7 +57,7 @@ class UpdateAltCommand extends Command
             $this->state->setAreaCode(Area::AREA_ADMINHTML);
         }
         if ($input->getArgument('product_id')) {
-          $output->writeln('Updating Image Tags from ID' . $input->getArgument('product_id'));
+          $output->writeln('Updating Image Tags from ID: ' . $input->getArgument('product_id'));
         } else{
           $output->writeln('Updating Image Tags');
         } 
